@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.lihover{
+  @apply hover:text-black font-semibold cursor-pointer transition-all
+}
+
+.evrbtn{
+  @apply text-center bg-[#ff7d1a] py-2 px-16 rounded-md text-white font-bold
+  flex items-center gap-2 hover:shadow-xl select-none;
+}
+
+::selection{
+  background-color: #ff7d1a;
+  color: white;
+}
